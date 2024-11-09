@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section>
-        <h1>hola mundo</h1>
-    </section>
-    <div class="mateo">hola mundo</div>
+
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>¡Explora nuestros productos y servicios!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#reseñas">reseñas</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        
+        <section id="productos">
+            <h2>Productos</h2>
+            <div class="producto-cards">
+                <div class="producto-card">
+                    <img src="producto1.jpg" alt="Producto 1">
+                    <p class="producto-nombre">Producto 1</p>
+                    <p class="producto-descripcion">Este es un excelente producto que ofrece calidad y durabilidad.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="producto2.jpg" alt="Producto 2">
+                    <p class="producto-nombre">Producto 2</p>
+                    <p class="producto-descripcion">Nuestro Producto 2 es ideal para quienes buscan lo mejor en tecnología.</p>
+                </div>
+                <div class="producto-card">
+                    <img src="producto3.jpg" alt="Producto 3">
+                    <p class="producto-nombre">Producto 3</p>
+                    <p class="producto-descripcion">Con una excelente relación calidad-precio, el Producto 3 es una opción confiable.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="reseñas">
+            <h2>Reseñas</h2>
+            <div class="reseñas-grid">
+                <div class="reseña">Excelente producto!</div>
+                <div class="reseña">Me encantó la atención al cliente.</div>
+                <div class="reseña">Muy buena calidad y precio.</div>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
-<section>h3 creacion de section </section>
 </html>
